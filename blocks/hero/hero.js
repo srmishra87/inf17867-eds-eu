@@ -32,8 +32,8 @@ export default function decorate(block) {
     </div>
 
     <div class="hero-actions">
-      ${buttonUrl}${buttonText}</a>
-      ${button2Url}${button2Text}</a>
+      <a href=${buttonUrl}>${buttonText}</a>
+      <a href=${button2Url}>${button2Text}</a>
     </div>
   `;
 
