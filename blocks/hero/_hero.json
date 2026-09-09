@@ -21,25 +21,49 @@
       "id": "hero",
       "fields": [
         {
-          "component": "reference",
-          "valueType": "string",
-          "name": "image",
-          "label": "Image",
-          "multi": false
+          "component": "text",
+          "name": "badge",
+          "label": "Badge"
         },
         {
           "component": "text",
-          "valueType": "string",
-          "name": "imageAlt",
-          "label": "Alt",
-          "value": ""
+          "name": "heading",
+          "label": "Heading"
         },
         {
           "component": "richtext",
-          "name": "text",
-          "value": "",
-          "label": "Text",
-          "valueType": "string"
+          "name": "description",
+          "label": "Description"
+        },
+        {
+          "component": "reference",
+          "name": "image",
+          "label": "Image"
+        },
+        {
+          "component": "text",
+          "name": "imageAlt",
+          "label": "Image Alt"
+        },
+        {
+          "component": "text",
+          "name": "buttonText",
+          "label": "Button Text"
+        },
+        {
+          "component": "text",
+          "name": "buttonUrl",
+          "label": "Button URL"
+        },
+        {
+          "component": "text",
+          "name": "button2Text",
+          "label": "Button 2 Text"
+        },
+         {
+          "component": "text",
+          "name": "button2Url",
+          "label": "Button 2 URL"
         }
       ]
     }
