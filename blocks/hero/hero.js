@@ -33,7 +33,7 @@ export default function decorate(block) {
 
     <div class="hero-actions">
       <a href=${buttonUrl}>${buttonText}</a>
-      <a href=${button2Url}>${button2Text}</a>
+      ${button2Url&&button2Text? `<a href=${button2Url}>${button2Text}</a>`:``}
     </div>
   `;
 
