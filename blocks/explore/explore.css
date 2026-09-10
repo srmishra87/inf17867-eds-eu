@@ -1,0 +1,113 @@
+.explore-container .explore-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.explore {
+  padding: 72px 24px;
+  text-align: center;
+}
+
+.explore.orange {
+  background: #f97316;
+  color: #1a1a1a;
+}
+
+.explore.dark {
+  background: #0d1c15;
+  color: #fff;
+}
+
+.explore-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.explore-eyebrow {
+  margin-bottom: 12px;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+
+  opacity: 0.9;
+}
+
+.explore h2 {
+  margin: 0 0 16px;
+
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.1;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.explore-description {
+  max-width: 720px;
+  margin: 0 auto;
+
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.explore-description p {
+  margin: 0;
+}
+
+.explore-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 28px;
+  padding: 14px 32px;
+
+  border-radius: 999px;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  transition: all 0.2s ease;
+}
+
+.explore-btn:hover {
+  transform: translateY(-2px);
+}
+
+.explore.orange .explore-btn {
+  background: #fff;
+  color: #111;
+}
+
+.explore.dark .explore-btn {
+  background: #fff;
+  color: #111;
+}
+
+.explore.orange .explore-btn:hover,
+.explore.dark .explore-btn:hover {
+  background: #f4f4f4;
+}
+
+@media (max-width: 768px) {
+  .explore {
+    padding: 56px 24px;
+  }
+
+  .explore h2 {
+    font-size: clamp(1.75rem, 8vw, 2.75rem);
+  }
+
+  .explore-description {
+    font-size: 0.95rem;
+  }
+
+  .explore-btn {
+    width: 100%;
+    max-width: 320px;
+  }
+}

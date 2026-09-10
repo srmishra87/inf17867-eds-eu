@@ -1,0 +1,67 @@
+{
+  "definitions": [
+    {
+      "title": "Explore",
+      "id": "explore",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Explore",
+              "model": "explore"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "explore",
+      "fields": [
+        {
+          "component": "text",
+          "name": "eyebrow",
+          "label": "Eyebrow"
+        },
+        {
+          "component": "text",
+          "name": "heading",
+          "label": "Heading"
+        },
+        {
+          "component": "richtext",
+          "name": "description",
+          "label": "Description"
+        },
+        {
+          "component": "text",
+          "name": "buttonText",
+          "label": "Button Text"
+        },
+        {
+          "component": "text",
+          "name": "buttonUrl",
+          "label": "Button URL"
+        },
+        {
+          "component": "select",
+          "name": "theme",
+          "label": "Theme",
+          "options": [
+            {
+              "name": "Orange",
+              "value": "orange"
+            },
+            {
+              "name": "Dark",
+              "value": "dark"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

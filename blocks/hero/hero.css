@@ -65,7 +65,7 @@
   font-size: clamp(3rem, 8vw, 5.5rem);
 
   /* prevents heading from becoming one giant line */
-  max-width: 12ch;
+  max-width: 8ch;
 }
 
 .hero-description {
