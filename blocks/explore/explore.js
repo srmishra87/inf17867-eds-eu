@@ -23,7 +23,7 @@ export default function decorate(block) {
         ${description}
       </div>
 
-      ${buttonUrl}
+      <a href=${buttonUrl}>
         ${buttonText}
       </a>
     </div>
