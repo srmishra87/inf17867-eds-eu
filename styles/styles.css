@@ -346,7 +346,7 @@ main img {
 
 /* sections */
 main > .section {
-  margin: 40px 0;
+  margin:  0 !important;
 }
 
 main > .section > div {
@@ -371,7 +371,7 @@ main .section.white {
   padding: 80px 0;
 }
 main .section.white {
-  background: #fffdf8;
+  background: #f6f2eb;
   color: #111;
 }
 

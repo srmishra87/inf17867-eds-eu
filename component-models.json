@@ -160,11 +160,44 @@
         "multi": false
       },
       {
+        "component": "text",
+        "name": "eyebrow",
+        "label": "Eyebrow"
+      },
+      {
+        "component": "text",
+        "name": "title",
+        "label": "Title"
+      },
+      {
         "component": "richtext",
-        "name": "text",
-        "value": "",
-        "label": "Text",
-        "valueType": "string"
+        "name": "description",
+        "label": "Description"
+      },
+      {
+        "component": "text",
+        "name": "linkText",
+        "label": "Link Text"
+      },
+      {
+        "component": "text",
+        "name": "linkUrl",
+        "label": "Link URL"
+      },
+      {
+        "component": "select",
+        "name": "variant",
+        "label": "Variant",
+        "options": [
+          {
+            "name": "Image",
+            "value": "image"
+          },
+          {
+            "name": "Planning",
+            "value": "planning"
+          }
+        ]
       }
     ]
   },
