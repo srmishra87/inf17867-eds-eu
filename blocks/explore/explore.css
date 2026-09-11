@@ -130,3 +130,63 @@
 .explore.dark .button:hover {
   background: #f4f4f4;
 }
+.explore.orange > .explore-content > a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 28px;
+  padding: 14px 28px;
+
+  border-radius: 999px;
+
+  background: #111;
+  border: 2px solid #111;
+
+  color: white;
+  text-decoration: none;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  transition: all 0.2s ease;
+}
+
+.explore.orange > .explore-content > a:hover {
+  background: #222;
+  border-color: #222;
+
+  transform: translateY(-1px);
+}
+.explore.dark > .explore-content > a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 28px;
+  padding: 14px 28px;
+
+  border-radius: 999px;
+
+  background: white;
+  border: 2px solid white;
+
+  color: #0f2418;
+  text-decoration: none;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  transition: all 0.2s ease;
+}
+
+.explore.dark > .explore-content > a:hover {
+  background: #f6f6f6;
+  border-color: #f6f6f6;
+
+  transform: translateY(-1px);
+}

@@ -6,26 +6,40 @@ export default function decorate(block) {
 
   [...block.children].forEach((row) => {
     const li = document.createElement('li');
+    const body = document.createElement('div');
+
+    body.className = 'cards-card-body';
+
     moveInstrumentation(row, li);
 
     while (row.firstElementChild) {
-      li.append(row.firstElementChild);
+      const child = row.firstElementChild;
+
+      if (
+        child.children.length === 1
+        && child.querySelector('picture')
+      ) {
+        child.className = 'cards-card-image';
+        li.append(child);
+      } else {
+        while (child.firstChild) {
+          body.append(child.firstChild);
+        }
+
+        child.remove();
+      }
     }
 
-    [...li.children].forEach((div) => {
-      if (div.children.length === 1 && div.querySelector('picture')) {
-        div.className = 'cards-card-image';
-      } else {
-        div.className = 'cards-card-body';
+    body.querySelectorAll('p').forEach((p) => {
+      const text = p.textContent.trim().toLowerCase();
+
+      if (!text || text === 'image') {
+        p.remove();
       }
     });
-    // planning cards do not contain images
-    const hasImage = li.querySelector('.cards-card-image');
 
-    if (hasImage) {
-      li.classList.add('cards-destination');
-    } else {
-      li.classList.add('cards-planning');
+    if (body.children.length) {
+      li.append(body);
     }
 
     ul.append(li);
@@ -46,7 +60,7 @@ export default function decorate(block) {
 
     img.closest('picture').replaceWith(optimizedPic);
   });
-  block.replaceChildren(ul);
+
   const section = block.closest('.section');
 
   if (section?.classList.contains('dark')) {
@@ -54,4 +68,6 @@ export default function decorate(block) {
   } else {
     block.classList.add('cards-destination');
   }
+
+  block.replaceChildren(ul);
 }
