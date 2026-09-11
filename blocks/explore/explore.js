@@ -23,9 +23,7 @@ export default function decorate(block) {
         ${description}
       </div>
 
-      <a href=${buttonUrl}>
-        ${buttonText}
-      </a>
+      ${buttonUrl && buttonText ? `<a href=${buttonUrl}>${buttonText} </a>`:``}
     </div>
   `;
 }

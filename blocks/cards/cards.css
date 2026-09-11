@@ -161,25 +161,21 @@
 /* ========================================= */
 
 .cards-planning > ul > li {
-  background: rgb(255 255 255 / 4%);
+  background: #173126;
+
   border: 1px solid rgb(255 255 255 / 10%);
+  border-radius: 16px;
 
-  border-radius: 14px;
+  padding: 24px;
 
-  padding: 20px;
-
-  min-height: 280px;
-
-  backdrop-filter: blur(6px);
-
-  transition:
-    transform 0.2s ease,
-    border-color 0.2s ease;
+  min-height: 100%;
 }
 
 .cards-planning > ul > li:hover {
   transform: translateY(-2px);
-  border-color: rgb(255 255 255 / 18%);
+
+  border-color: rgb(255 255 255 / 20%);
+  box-shadow: none;
 }
 
 .cards-planning .cards-card-image {
@@ -188,58 +184,38 @@
 
 .cards-planning .cards-card-body {
   padding: 0;
-  margin: 0;
-
-  display: flex;
-  flex-direction: column;
-  height: 100%;
 }
 
-/* eyebrow */
-
 .cards-planning .cards-card-body p:nth-child(1) {
-  margin: 0 0 12px;
+  margin-bottom: 12px;
 
   background: none;
   padding: 0;
 
-  color: white;
+  color: #f97316;
 
-  font-size: 1.4rem;
+  font-size: 0.72rem;
   font-weight: 700;
 
-  text-transform: lowercase;
-  letter-spacing: 0;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
-
-/* title */
 
 .cards-planning .cards-card-body p:nth-child(2) {
-  margin: 0 0 16px;
+  margin-bottom: 12px;
 
-  color: rgb(161, 159, 159);
+  color: white;
 
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 0.95;
-  text-transform: none;
+  font-size: 1.15rem;
+  font-weight: 800;
+
+  line-height: 1.2;
+  text-transform: uppercase;
 }
-
-/* description */
 
 .cards-planning .cards-card-body p:nth-child(3) {
-  margin: 0;
-
-  color: rgb(255 255 255 / 60%);
-
-  font-size: 0.92rem;
+  color: rgb(255 255 255 / 75%);
   line-height: 1.7;
-}
-
-/* remove anything after description */
-
-.cards-planning .cards-card-body p:nth-child(n+4) {
-  display: none;
 }
 
 /* ========================================= */
