@@ -183,6 +183,7 @@ button.button {
   padding: 0.5em 1.2em;
   font: inherit;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.25;
   text-decoration: none;
   cursor: pointer;
@@ -197,7 +198,7 @@ button.button:disabled {
   pointer-events: none;
 }
 
-a.button.primary,
+/* a.button.primary,
 button.button.primary {
   border-color: var(--text-color);
   background-color: var(--text-color);
@@ -222,6 +223,30 @@ button.button.primary:disabled:focus-visible {
   background-color: var(--light-color);
   border-color: var(--light-color);
   color: var(--dark-color);
+} */
+a.button.primary,
+button.button.primary {
+  background: #0f2418;
+  border: 2px solid #f97316;
+  color: #fff;
+
+  border-radius: 999px;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  transition: all 0.2s ease;
+}
+
+a.button.primary:hover,
+a.button.primary:focus-visible,
+button.button.primary:hover,
+button.button.primary:focus-visible {
+  background: #173126;
+  border-color: #fb923c;
+  transform: translateY(-1px);
 }
 
 a.button.secondary,
@@ -231,7 +256,7 @@ button.button.secondary {
   color: var(--text-color);
 }
 
-a.button.secondary:hover,
+/* a.button.secondary:hover,
 a.button.secondary:focus-visible,
 button.button.secondary:hover,
 button.button.secondary:focus-visible {
@@ -249,6 +274,30 @@ button.button.secondary:disabled:focus-visible {
   background-color: var(--light-color);
   border-color: var(--light-color);
   color: var(--dark-color);
+} */
+a.button.secondary,
+button.button.secondary {
+  background: #f97316;
+  border: 2px solid #0f2418;
+  color: #fff;
+
+  border-radius: 999px;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+
+  transition: all 0.2s ease;
+}
+
+a.button.secondary:hover,
+a.button.secondary:focus-visible,
+button.button.secondary:hover,
+button.button.secondary:focus-visible {
+  background: #ea580c;
+  border-color: #173126;
+  transform: translateY(-1px);
 }
 
 /* high-impact call-to-action */
