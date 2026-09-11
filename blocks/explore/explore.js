@@ -5,10 +5,12 @@ export default function decorate(block) {
   const heading = rows[1]?.textContent.trim() || '';
   const description = rows[2]?.innerHTML || '';
 
-  const theme = rows[3]?.textContent.trim().toLowerCase() || 'orange';
+  const buttonText = rows[3]?.textContent.trim() || '';
+  const buttonUrl = rows[4]?.querySelector('a')?.href || '#';
+
+  const theme = rows[5]?.textContent.trim().toLowerCase() || 'orange';
 
   block.textContent = '';
-
   block.classList.add(theme);
 
   block.innerHTML = `
@@ -20,6 +22,10 @@ export default function decorate(block) {
       <div class="explore-description">
         ${description}
       </div>
+
+      <a href=${buttonUrl}>
+        ${buttonText}
+      </a>
     </div>
   `;
 }

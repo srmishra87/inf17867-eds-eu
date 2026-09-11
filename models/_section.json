@@ -31,8 +31,16 @@
           "label": "Style",
           "options": [
             {
+              "name": "White",
+              "value": "white"
+            },
+            {
               "name": "Highlight",
               "value": "highlight"
+            },
+            {
+              "name": "Dark",
+              "value": "dark"
             }
           ]
         }

@@ -21,9 +21,29 @@
       "id": "explore",
       "fields": [
         {
+          "component": "text",
+          "name": "eyebrow",
+          "label": "Eyebrow"
+        },
+        {
+          "component": "text",
+          "name": "heading",
+          "label": "Heading"
+        },
+        {
           "component": "richtext",
           "name": "description",
           "label": "Description"
+        },
+        {
+          "component": "text",
+          "name": "buttonText",
+          "label": "Button Text"
+        },
+        {
+          "component": "text",
+          "name": "buttonUrl",
+          "label": "Button URL"
         },
         {
           "component": "select",
@@ -43,12 +63,5 @@
       ]
     }
   ],
-  "filters": [
-  {
-      "id": "explore",
-      "components": [
-        "button"
-      ]
-    }
-  ]
+  "filters": []
 }
