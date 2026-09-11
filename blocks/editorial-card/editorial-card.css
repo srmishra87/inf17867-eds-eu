@@ -1,48 +1,53 @@
-.editorial-panel {
+.editorial-card {
   padding: 72px 24px;
 }
 
-.editorial-panel-content {
+.editorial-card-content {
   max-width: 900px;
   margin: 0 auto;
 }
 
-.editorial-panel h2 {
+.editorial-card h2 {
   margin: 0 0 24px;
 
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1;
   font-weight: 800;
-
   text-transform: uppercase;
 }
 
-.editorial-panel-text {
+.editorial-card-text {
   line-height: 1.8;
 }
 
-.editorial-panel-actions {
+.editorial-card-text p {
+  margin-bottom: 1rem;
+}
+
+.editorial-card-actions {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
-
   margin-top: 32px;
+  text-align: center;
+}
+.editorial-card-container{
+  text-align: center;
 }
 
 /* ================================= */
 /* LIGHT */
 /* ================================= */
 
-.editorial-panel-light {
-  background: #f6f2eb;
+.editorial-card-light {
   color: #10231c;
 }
 
-.editorial-panel-light h2 {
+.editorial-card-light h2 {
   color: #10231c;
 }
 
-.editorial-panel-light .editorial-panel-text {
+.editorial-card-light .editorial-card-text {
   color: #5b635d;
 }
 
@@ -50,39 +55,48 @@
 /* DARK */
 /* ================================= */
 
-.editorial-panel-dark {
-  background: #0f2418;
+.dark.editorial-card-container {
+  color: white !important;
+}
+
+.dark.editorial-card-container h2 {
   color: white;
 }
 
-.editorial-panel-dark h2 {
-  color: white;
+.dark.editorial-card-container .editorial-card-text p{
+  color: rgba(255, 255, 255, 0.75);
 }
 
-.editorial-panel-dark .editorial-panel-text {
-  color: rgb(255 255 255 / 75%);
-}
+/* button overrides */
 
-.editorial-panel-dark .button.primary {
+.dark.editorial-card-container .button.primary {
   background: white;
+  border: 2px solid white;
   color: #10231c;
-  border-color: white;
 }
 
-.editorial-panel-dark .button.secondary {
+.dark.editorial-card-container .button.primary:hover {
+  background: #f6f6f6;
+  border-color: #f6f6f6;
+}
+
+.dark.editorial-card-container .button.secondary {
   background: transparent;
+  border: 2px solid white;
   color: white;
-  border-color: white;
+}
+
+.dark.editorial-card-container .button.secondary:hover {
+  background: rgb(255 255 255 / 8%);
 }
 
 /* ================================= */
-/* CARD */
+/* CARD VARIANT */
 /* ================================= */
 
-.editorial-panel-cards {
+.editorial-card-cards {
   background: rgb(255 255 255 / 4%);
   border: 1px solid rgb(255 255 255 / 10%);
-
   border-radius: 16px;
 
   padding: 24px;
@@ -92,40 +106,113 @@
   backdrop-filter: blur(6px);
 }
 
-.editorial-panel-cards h2 {
-  margin-bottom: 16px;
+.editorial-card-cards .editorial-card-content {
+  max-width: unset;
+}
+
+.editorial-card-cards h2 {
+  margin-bottom: 12px;
 
   color: white;
 
   font-size: 2rem;
-  line-height: 0.9;
+  line-height: 0.95;
 }
 
-.editorial-panel-cards .editorial-panel-text {
+.editorial-card-cards .editorial-card-text {
   color: rgb(255 255 255 / 65%);
-
   font-size: 0.9rem;
   line-height: 1.7;
 }
 
-.editorial-panel-cards .editorial-panel-actions {
+.editorial-card-cards .editorial-card-actions {
   display: none;
 }
+
+/* ================================= */
+/* REGIONAL EDITORS */
+/* ================================= */
+
+.white .editorial-card-content {
+  max-width: 50rem;
+  text-align: center;
+}
+
+.white .editorial-card-actions {
+  justify-content: center;
+}
+
+/* ================================= */
+/* PERMITS */
+/* ================================= */
+
+.dark .editorial-card-content {
+  max-width: 50rem;
+   text-align: center;
+  justify-content: center;
+}
+
 
 /* ================================= */
 /* MOBILE */
 /* ================================= */
 
 @media (max-width: 768px) {
-  .editorial-panel {
+  .editorial-card {
     padding: 56px 24px;
   }
 
-  .editorial-panel-actions {
+  .editorial-card-actions {
     flex-direction: column;
   }
 
-  .editorial-panel-actions .button {
+  .editorial-card-actions .button {
     width: 100%;
   }
+}
+
+/* CARD DESIGN OVERRIDE */
+
+.editorial-card-cards {
+  padding: 20px;
+  text-align: left;
+}
+
+.editorial-card-cards .editorial-card-content {
+  margin: 0;
+  max-width: none;
+}
+
+.editorial-card-cards h2 {
+  margin: 0 0 12px;
+
+  font-size: 1.75rem;
+  line-height: 0.9;
+  font-weight: 800;
+
+  text-transform: uppercase;
+}
+
+.editorial-card-cards .editorial-card-text {
+  color: rgb(255 255 255 / 65%);
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+.editorial-card-cards .editorial-card-text p:first-child {
+  margin-bottom: 4px;
+
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 700;
+
+  text-transform: lowercase;
+}
+
+.editorial-card-cards .editorial-card-text p:not(:first-child) {
+  margin: 0;
+}
+
+.editorial-card-cards .editorial-card-actions {
+  display: none;
 }
