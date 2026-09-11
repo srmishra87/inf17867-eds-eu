@@ -33,7 +33,12 @@ export default function decorate(block) {
     body.querySelectorAll('p').forEach((p) => {
       const text = p.textContent.trim().toLowerCase();
 
-      if (!text || text === 'image') {
+      if (
+        !text
+        || text === 'image'
+        || text === 'planning'
+        || text === 'destination'
+      ) {
         p.remove();
       }
     });
@@ -60,14 +65,6 @@ export default function decorate(block) {
 
     img.closest('picture').replaceWith(optimizedPic);
   });
-
-  const section = block.closest('.section');
-
-  if (section?.classList.contains('dark')) {
-    block.classList.add('cards-planning');
-  } else {
-    block.classList.add('cards-destination');
-  }
 
   block.replaceChildren(ul);
 }
