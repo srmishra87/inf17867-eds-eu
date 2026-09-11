@@ -211,6 +211,60 @@
     ]
   },
   {
+    "id": "editorial-cards",
+    "fields": [
+      {
+        "component": "select",
+        "name": "variant",
+        "label": "Variant",
+        "options": [
+          {
+            "name": "Light",
+            "value": "light"
+          },
+          {
+            "name": "Dark",
+            "value": "dark"
+          },
+          {
+            "name": "Cards",
+            "value": "cards"
+          }
+        ]
+      },
+      {
+        "component": "text",
+        "name": "heading",
+        "label": "Heading"
+      },
+      {
+        "component": "richtext",
+        "name": "text",
+        "label": "Text"
+      },
+      {
+        "component": "text",
+        "name": "primaryButtonText",
+        "label": "Primary Button Text"
+      },
+      {
+        "component": "text",
+        "name": "primaryButtonUrl",
+        "label": "Primary Button URL"
+      },
+      {
+        "component": "text",
+        "name": "secondaryButtonText",
+        "label": "Secondary Button Text"
+      },
+      {
+        "component": "text",
+        "name": "secondaryButtonUrl",
+        "label": "Secondary Button URL"
+      }
+    ]
+  },
+  {
     "id": "explore",
     "fields": [
       {

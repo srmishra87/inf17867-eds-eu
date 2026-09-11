@@ -1,0 +1,131 @@
+.editorial-panel {
+  padding: 72px 24px;
+}
+
+.editorial-panel-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.editorial-panel h2 {
+  margin: 0 0 24px;
+
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1;
+  font-weight: 800;
+
+  text-transform: uppercase;
+}
+
+.editorial-panel-text {
+  line-height: 1.8;
+}
+
+.editorial-panel-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+
+  margin-top: 32px;
+}
+
+/* ================================= */
+/* LIGHT */
+/* ================================= */
+
+.editorial-panel-light {
+  background: #f6f2eb;
+  color: #10231c;
+}
+
+.editorial-panel-light h2 {
+  color: #10231c;
+}
+
+.editorial-panel-light .editorial-panel-text {
+  color: #5b635d;
+}
+
+/* ================================= */
+/* DARK */
+/* ================================= */
+
+.editorial-panel-dark {
+  background: #0f2418;
+  color: white;
+}
+
+.editorial-panel-dark h2 {
+  color: white;
+}
+
+.editorial-panel-dark .editorial-panel-text {
+  color: rgb(255 255 255 / 75%);
+}
+
+.editorial-panel-dark .button.primary {
+  background: white;
+  color: #10231c;
+  border-color: white;
+}
+
+.editorial-panel-dark .button.secondary {
+  background: transparent;
+  color: white;
+  border-color: white;
+}
+
+/* ================================= */
+/* CARD */
+/* ================================= */
+
+.editorial-panel-cards {
+  background: rgb(255 255 255 / 4%);
+  border: 1px solid rgb(255 255 255 / 10%);
+
+  border-radius: 16px;
+
+  padding: 24px;
+
+  color: white;
+
+  backdrop-filter: blur(6px);
+}
+
+.editorial-panel-cards h2 {
+  margin-bottom: 16px;
+
+  color: white;
+
+  font-size: 2rem;
+  line-height: 0.9;
+}
+
+.editorial-panel-cards .editorial-panel-text {
+  color: rgb(255 255 255 / 65%);
+
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.editorial-panel-cards .editorial-panel-actions {
+  display: none;
+}
+
+/* ================================= */
+/* MOBILE */
+/* ================================= */
+
+@media (max-width: 768px) {
+  .editorial-panel {
+    padding: 56px 24px;
+  }
+
+  .editorial-panel-actions {
+    flex-direction: column;
+  }
+
+  .editorial-panel-actions .button {
+    width: 100%;
+  }
+}
