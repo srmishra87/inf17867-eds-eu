@@ -26,16 +26,6 @@
           "label": "Description"
         },
         {
-          "component": "text",
-          "name": "buttonText",
-          "label": "Button Text"
-        },
-        {
-          "component": "text",
-          "name": "buttonUrl",
-          "label": "Button URL"
-        },
-        {
           "component": "select",
           "name": "theme",
           "label": "Theme",
