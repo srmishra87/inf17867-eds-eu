@@ -132,9 +132,7 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-.cards-wrapper{
-  padding-bottom: 40px !important;
-}
+
 /* title */
 
 .cards-card-body p:nth-child(2) {
